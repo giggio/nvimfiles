@@ -11,3 +11,5 @@ if has('unix')
 elseif has('win32')
   source ~/_vimrc
 endif
+
+lua require('init')
