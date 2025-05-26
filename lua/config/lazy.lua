@@ -23,11 +23,11 @@ vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup({
-  root = vim.g.pluginInstallPath, -- share plugin folder with Plug
+  root = vim.g.nvimPluginInstallPath,
   spec = {
     -- import your plugins
     -- { import = "plugins" },
-    LazyPlugSpecs,
+    LazyPlugSpecs, -- bringing in the plugin in list from vim
     {
       "Joakker/lua-json5",
       build = "./install.sh",
